@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33927.249
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.api", "SkycavePlayerService.api\SkycavePlayerService.api.csproj", "{173E33F1-AF2E-4C44-B3F9-0D8644834829}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Tests.UnitTests", "SkycavePlayerService.Tests.UnitTests\SkycavePlayerService.Tests.UnitTests.csproj", "{DA554AD7-1FFB-4263-BF7E-571DA9F48951}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B4862CC9-712A-471B-9A3B-E0027A703315}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		bitbucket-pipelines.yml = bitbucket-pipelines.yml
+		Dockerfile = Dockerfile
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Implementations.TestDoubles", "SkycavePlayerService.Implementations.TestDoubles\SkycavePlayerService.Implementations.TestDoubles.csproj", "{8F2832B5-7FC3-4F56-994D-E9D4238D7305}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Shared.Models", "SkycavePlayerService.Shared.Models\SkycavePlayerService.Shared.Models.csproj", "{CBB15EB1-6126-44C3-BF0C-F1D28A759A01}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Shared.Contracts", "SkycavePlayerService.Shared.Contracts\SkycavePlayerService.Shared.Contracts.csproj", "{8C67C31E-F6EF-46E1-BBBF-631856EFCA5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Implementations.Repositories", "SkycavePlayerService.Implementations.Repositories\SkycavePlayerService.Implementations.Repositories.csproj", "{C6D089C2-7BE8-4430-A776-2F11A04C24DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Implementations.Storage", "SkycavePlayerService.Implementations.Storage\SkycavePlayerService.Implementations.Storage.csproj", "{671B931E-39E7-4146-ACDF-B708D795C7EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Tests.IntegrationTests", "SkycavePlayerService.Tests.IntegrationTests\SkycavePlayerService.Tests.IntegrationTests.csproj", "{470C4F61-EC85-4057-9012-35C1422296D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Exceptions", "SkycavePlayerService.Exceptions\SkycavePlayerService.Exceptions.csproj", "{F921BD34-036C-419E-9EF1-46A4E816EA57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Tests.TestUtilities", "SkycavePlayerService.Tests.TestUtilities\SkycavePlayerService.Tests.TestUtilities.csproj", "{9CDC551D-83DC-477E-9A14-B265E6BC60D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{173E33F1-AF2E-4C44-B3F9-0D8644834829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173E33F1-AF2E-4C44-B3F9-0D8644834829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173E33F1-AF2E-4C44-B3F9-0D8644834829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173E33F1-AF2E-4C44-B3F9-0D8644834829}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA554AD7-1FFB-4263-BF7E-571DA9F48951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA554AD7-1FFB-4263-BF7E-571DA9F48951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA554AD7-1FFB-4263-BF7E-571DA9F48951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA554AD7-1FFB-4263-BF7E-571DA9F48951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F2832B5-7FC3-4F56-994D-E9D4238D7305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F2832B5-7FC3-4F56-994D-E9D4238D7305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F2832B5-7FC3-4F56-994D-E9D4238D7305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F2832B5-7FC3-4F56-994D-E9D4238D7305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBB15EB1-6126-44C3-BF0C-F1D28A759A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB15EB1-6126-44C3-BF0C-F1D28A759A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB15EB1-6126-44C3-BF0C-F1D28A759A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB15EB1-6126-44C3-BF0C-F1D28A759A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C67C31E-F6EF-46E1-BBBF-631856EFCA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C67C31E-F6EF-46E1-BBBF-631856EFCA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C67C31E-F6EF-46E1-BBBF-631856EFCA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C67C31E-F6EF-46E1-BBBF-631856EFCA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6D089C2-7BE8-4430-A776-2F11A04C24DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D089C2-7BE8-4430-A776-2F11A04C24DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D089C2-7BE8-4430-A776-2F11A04C24DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D089C2-7BE8-4430-A776-2F11A04C24DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{671B931E-39E7-4146-ACDF-B708D795C7EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{671B931E-39E7-4146-ACDF-B708D795C7EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{671B931E-39E7-4146-ACDF-B708D795C7EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{671B931E-39E7-4146-ACDF-B708D795C7EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{470C4F61-EC85-4057-9012-35C1422296D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{470C4F61-EC85-4057-9012-35C1422296D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{470C4F61-EC85-4057-9012-35C1422296D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{470C4F61-EC85-4057-9012-35C1422296D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F921BD34-036C-419E-9EF1-46A4E816EA57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F921BD34-036C-419E-9EF1-46A4E816EA57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F921BD34-036C-419E-9EF1-46A4E816EA57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F921BD34-036C-419E-9EF1-46A4E816EA57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CDC551D-83DC-477E-9A14-B265E6BC60D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDC551D-83DC-477E-9A14-B265E6BC60D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDC551D-83DC-477E-9A14-B265E6BC60D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDC551D-83DC-477E-9A14-B265E6BC60D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6399877F-86CB-41BB-8D43-3699AE6191F3}
+	EndGlobalSection
+EndGlobal
