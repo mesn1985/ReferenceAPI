@@ -32,6 +32,6 @@ jobs:
     - name: Build and push Pleyer record service image
       uses: docker/build-push-action@v5
       with:
-          context: "{{defaultContext}}:msdo.oauth.identityServer"
+          context: "{{defaultContext}}:PlayerRecordService.api"
           push: true
           tags: lightmaze/player_record_service , lightmaze/player_record_service:${{github.run_number}}
