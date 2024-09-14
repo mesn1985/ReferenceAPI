@@ -1,0 +1,17 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "Implementations": {
+    "PlayerStorage": "SkycavePlayerService.Implementations.Storage.PlayerServiceRedisStorage",
+    "PlayerRepository": "SkycavePlayerService.Implementations.Repositories.PlayerRepository"
+  },
+  "ConnectionStrings": {
+    "Redis": "127.0.0.1:6379"
+  }
+
+}
