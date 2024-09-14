@@ -1,8 +1,8 @@
 ﻿# Created by: Martin Edwin Schjødt Nielsen
-# Build: docker build . -t lightmaze16/player_record_service
-# Push to Repository: docker push lightmaze16/player_record_service (with default tag "latest")
-# Execute with fakeplayerStorage as configuration file: docker run -p 80:80 lightmaze16/player_record_service (Uses )
-# Excute  with specific configurataion file: docker run -p 80:80 lightmaze16/player_record_service dotnet SkycavePlayerService.api.dll Configuration:File=<configuration filename>.json
+# Build: docker build . -t lightmaze/player_record_service
+# Push to Repository: docker push lightmaze/player_record_service (with default tag "latest")
+# Execute with fakeplayerStorage as configuration file: docker run -p 80:80 lightmaze/player_record_service (Uses )
+# Excute  with specific configurataion file: docker run -p 80:80 lightmaze/player_record_service dotnet PlayerRecordService.api.dll Configuration:File=<configuration filename>.json
 
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
