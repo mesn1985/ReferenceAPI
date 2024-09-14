@@ -1,6 +1,4 @@
-[TOC]
-
-# player record service
+# Player record service
   
 Player record service is a service that functionalities for persisting, retrieving or
 changing existing player records. 
@@ -12,7 +10,7 @@ The service provides Open api specifications through swagger. Which means that a
 generated upon build.
 
 Currently the api is set to provide the specifications at the path `/swagger/index.html` in development
-enviroments.
+environments.
 
 For more information on swagger configuration in .net, see (https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-7.0)[https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-7.0]
 
