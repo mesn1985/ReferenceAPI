@@ -12,7 +12,7 @@ generated upon build.
 Currently the api is set to provide the specifications at the path `/swagger/index.html` in development
 environments.
 
-For more information on swagger configuration in .net, see (https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-7.0)[https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-7.0]
+For more information on swagger configuration in .net, see (ASP .NET core swagger help)[https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-7.0]
 
 ## General structure of the code base
 
