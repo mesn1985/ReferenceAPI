@@ -28,7 +28,7 @@ jobs:
       uses: docker/login-action@v3
       with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_CLIENT_SERIVCE_REPO_TOKEN }}
+          password: ${{ secrets.DOCKER_HUB_PLAYER_RECORD_TOKEN }}
     - name: Build and push Pleyer record service image
       uses: docker/build-push-action@v5
       with:
