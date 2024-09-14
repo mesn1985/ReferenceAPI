@@ -7,7 +7,7 @@ namespace PlayerRecordService.api.Configuration.Extensions
     ///  provides extension methods for initializing dependency injection implementations based on configuration settings.
     ///  This class allows for dynamic loading of assemblies and instantiation of types specified in a configuration file.
     /// 
-    /// @author: Team india
+    /// @author: Martin Edwin Schjødt Nielsen
     /// </summary>
     internal static class DependencyServiceExtensions
     {

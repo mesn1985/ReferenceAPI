@@ -11,8 +11,8 @@ namespace PlayerRecordService.api.DTOs
    /// in inbound requests, our outbound response.
    /// Generally this class should only be used within the
    /// controller class, because is a dto, and no other layers
-   /// of the api implementation should have dependencies towards  it.
-   /// @author: team india
+   /// of the api implementation should have dependencies towards it.
+   /// @author: Martin Edwin Schjødt Nielsen
    /// </summary>
     public class PlayerRecord
     {

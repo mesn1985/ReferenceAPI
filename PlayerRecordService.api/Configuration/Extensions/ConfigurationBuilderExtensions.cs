@@ -2,7 +2,7 @@
 {
     /// <summary>
     /// An extention method class container for all Extension methods related to  IConfigurationBuilder
-    /// @author: team india
+    /// @author: Martin Edwin Schjødt Nielsen
     /// </summary>
     internal static class ConfigurationBuilderExtensions
     {

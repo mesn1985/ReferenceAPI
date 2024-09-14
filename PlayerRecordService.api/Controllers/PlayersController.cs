@@ -13,7 +13,7 @@ namespace PlayerRecordService.api.Controllers
 {
     /// <summary>
     /// Player service service layer.
-    /// @author: Team india
+    /// @author: Martin Edwin Schjødt Nielsen
     /// </summary>
     [Route("api/v{version:apiVersion}/[controller]")]
     [ApiVersion("1")]
