@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SkycavePlayerService.Shared.Contracts\SkycavePlayerService.Shared.Contracts.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Shared.Contracts\SkycavePlayerService.Shared.Contracts.csproj" />
   </ItemGroup>
 
 </Project>

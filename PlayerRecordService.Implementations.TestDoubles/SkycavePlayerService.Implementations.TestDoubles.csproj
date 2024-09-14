@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SkycavePlayerService.Shared.Contracts\SkycavePlayerService.Shared.Contracts.csproj" />
-    <ProjectReference Include="..\SkycavePlayerService.Shared.Models\SkycavePlayerService.Shared.Models.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Shared.Contracts\SkycavePlayerService.Shared.Contracts.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Shared.Models\SkycavePlayerService.Shared.Models.csproj" />
   </ItemGroup>
 
 </Project>
