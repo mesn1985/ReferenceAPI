@@ -57,7 +57,7 @@ namespace PlayerRecordService.api.Controllers
             return Ok(playerModel.AsDto());
         }
         /// <summary>
-        /// Updates existing player, or adds new player if the is no match on the player id
+        /// Updates existing player, or adds new player if the is no match on the player id.
         /// </summary>
         /// <param name="playerRecord">The values that will replace the values of the player with a correlating id </param>
         /// <returns>Status code 200 if request player record is succesfully updated. R</returns>

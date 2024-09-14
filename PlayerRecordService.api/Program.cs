@@ -1,31 +1,42 @@
 using System.Reflection;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Primitives;
 using Microsoft.OpenApi.Models;
 using PlayerRecordService.api.Configuration.Extensions;
 using PlayerRecordService.api.Infrastructure;
+using Serilog;
+using Serilog.Context;
+
 
 namespace PlayerRecordService.api
 {
     /// <summary>
     /// The Program class is the composition root of the api service.
-    /// All application configuration is handle within this class.
-    /// @author: team india
+    /// @author: Martin Edwin Schjødt Nielsen
     /// </summary>
+    /// Is very bloated, and should be refactored
     public partial class Program
     {
         public static void Main(string[] args)
         {
 
             var builder = WebApplication.CreateBuilder(args);
-            builder.Logging.ClearProviders();
-            builder.Logging.AddConsole();
+            //builder.Logging.ClearProviders();
+            //builder.Logging.AddConsole();
+
             // Obtain configurations from configuration file defined by cli arguments
             var configuration =
                 new ConfigurationBuilder()
                     .AddConfigurationFileByNameProvidedFromCommandLineArguments(builder, builder.Environment.ContentRootPath)
                     .Build();
             builder.Configuration.AddConfiguration(configuration);
+
+            // Log configuration
+            builder.Host.UseSerilog((context, configuration) =>
+                configuration.ReadFrom.Configuration(context.Configuration).Enrich.FromLogContext()
+            );
+
             // Dynamically configuring Dependency injection based on implementations defined in the Configuration file
             builder.Services
                 .InitializeDependencyInjectionImplmentationsBasedOnConfigurationFileImplementations(builder.Configuration);
@@ -88,7 +99,7 @@ namespace PlayerRecordService.api
 
             var app = builder.Build();
 
-
+            // Configure request pipeline
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -106,6 +117,25 @@ namespace PlayerRecordService.api
 
                     });
             }
+
+            // Middleware that adds correlation id to request.
+
+            // Add Correlation id to header, if non are existing.
+            app.Use(async (context, next) =>
+            {
+                const string _correlationIdHeader = "X-Correlation-Id";
+                const string correlationIdLogPropertyname = "CorrelationId";
+
+                context.Request.Headers.TryGetValue(_correlationIdHeader, out StringValues correlationIds);
+                var correlationId = correlationIds.FirstOrDefault() ?? Guid.NewGuid().ToString();
+
+                using (LogContext.PushProperty(correlationIdLogPropertyname, correlationId))
+                {
+                    context.Items["Correlation-Id"] = correlationId;
+                    await next(context);
+                }
+            });
+
             app.MapControllers();
 
             app.Run();

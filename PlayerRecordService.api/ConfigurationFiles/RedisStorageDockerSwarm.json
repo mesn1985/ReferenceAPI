@@ -12,5 +12,23 @@
   },
   "ConnectionStrings": {
     "Redis": "redisplayerstorage:6379"
+  },
+  "Serilog": {
+    "MinimumLevel": "Verbose",
+    "WriteTo": [
+      {
+        "Name": "Console",
+        "Args": {
+          "outputTemplate": "[Time:{Timestamp:HH:mm:ss}] [LogLevel:{Level:u3}] [CorrelationId:{CorrelationId}] {NewLine} [Message:{Message}]"
+        }
+      },
+      {
+        "Name": "File",
+        "Args": {
+          "path": "application.log",
+          "rollingInterval": "Day"
+        }
+      }
+    ]
   }
 }
