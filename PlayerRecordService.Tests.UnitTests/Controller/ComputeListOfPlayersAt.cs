@@ -1,12 +1,12 @@
 ﻿using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using SkycavePlayerService.api.DTOs;
-using SkycavePlayerService.Shared.Models.PlayerRecord;
-using SkycavePlayerService.Shared.Models.PlayerRecord.Primitives;
-using SkycavePlayerService.Tests.TestUtilities.Extensions;
+using PlayerRecordService.api.DTOs;
+using PlayerRecordService.Shared.Models.PlayerRecord;
+using PlayerRecordService.Shared.Models.PlayerRecord.Primitives;
+using PlayerRecordService.Tests.TestUtilities.Extensions;
 
-namespace SkycavePlayerService.Tests.UnitTests.Controller
+namespace PlayerRecordService.Tests.UnitTests.Controller
 {
     /// <summary>
     /// All input validation is handled by middleware, and is therefor

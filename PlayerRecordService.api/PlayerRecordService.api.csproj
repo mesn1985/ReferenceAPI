@@ -30,12 +30,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PlayerRecordService.Exceptions\SkycavePlayerService.Exceptions.csproj" />
-    <ProjectReference Include="..\PlayerRecordService.Implementations.Repositories\SkycavePlayerService.Implementations.Repositories.csproj" />
-    <ProjectReference Include="..\PlayerRecordService.Implementations.Storage\SkycavePlayerService.Implementations.Storage.csproj" />
-    <ProjectReference Include="..\PlayerRecordService.Implementations.TestDoubles\SkycavePlayerService.Implementations.TestDoubles.csproj" />
-    <ProjectReference Include="..\PlayerRecordService.Shared.Contracts\SkycavePlayerService.Shared.Contracts.csproj" />
-    <ProjectReference Include="..\PlayerRecordService.Shared.Models\SkycavePlayerService.Shared.Models.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Exceptions\PlayerRecordService.Exceptions.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Implementations.Repositories\PlayerRecordService.Implementations.Repositories.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Implementations.Storage\PlayerRecordService.Implementations.Storage.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Implementations.TestDoubles\PlayerRecordService.Implementations.TestDoubles.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Shared.Contracts\PlayerRecordService.Shared.Contracts.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Shared.Models\PlayerRecordService.Shared.Models.csproj" />
   </ItemGroup>
 
   <ItemGroup>

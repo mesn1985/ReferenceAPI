@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace SkycavePlayerService.Shared.Models.PlayerRecord.Primitives
+namespace PlayerRecordService.Shared.Models.PlayerRecord.Primitives
 {
     public class Position : ValueObjectBase<string>
     {

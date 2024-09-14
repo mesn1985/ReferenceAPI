@@ -1,12 +1,12 @@
 ﻿using Microsoft.Extensions.Configuration;
-using SkycavePlayerService.Implementations.Storage.Extentions;
-using SkycavePlayerService.Implementations.Storage.Models;
-using SkycavePlayerService.Shared.Contracts;
-using SkycavePlayerService.Shared.Models.PlayerRecord;
-using SkycavePlayerService.Shared.Models.PlayerRecord.Primitives;
+using PlayerRecordService.Implementations.Storage.Extentions;
+using PlayerRecordService.Implementations.Storage.Models;
+using PlayerRecordService.Shared.Contracts;
+using PlayerRecordService.Shared.Models.PlayerRecord;
+using PlayerRecordService.Shared.Models.PlayerRecord.Primitives;
 using StackExchange.Redis;
 
-namespace SkycavePlayerService.Implementations.Storage
+namespace PlayerRecordService.Implementations.Storage
 {
     public class PlayerServiceRedisStorage : IPlayerStorage
     {

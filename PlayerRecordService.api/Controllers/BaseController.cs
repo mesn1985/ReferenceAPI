@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace SkycavePlayerService.api.Controllers
+namespace PlayerRecordService.api.Controllers
 {
     /// <summary>
     /// Base controller for the controller implementations

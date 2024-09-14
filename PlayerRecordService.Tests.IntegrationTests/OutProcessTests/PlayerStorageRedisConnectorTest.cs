@@ -1,14 +1,13 @@
-﻿using DotNet.Testcontainers.Containers;
-using Microsoft.Extensions.Configuration;
-using SkycavePlayerService.api.DTOs;
-using SkycavePlayerService.Implementations.Storage;
-using SkycavePlayerService.Shared.Contracts;
-using SkycavePlayerService.Shared.Models.PlayerRecord.Primitives;
-using SkycavePlayerService.Tests.TestUtilities;
-using SkycavePlayerService.Tests.TestUtilities.Extensions;
-using Testcontainers.Redis;
+﻿using Microsoft.Extensions.Configuration;
+using PlayerRecordService.api.DTOs;
+using PlayerRecordService.Implementations.Storage;
+using PlayerRecordService.Shared.Contracts;
+using PlayerRecordService.Shared.Models.PlayerRecord;
+using PlayerRecordService.Shared.Models.PlayerRecord.Primitives;
+using PlayerRecordService.Tests.TestUtilities;
+using PlayerRecordService.Tests.TestUtilities.Extensions;
 
-namespace SkycavePlayerService.Tests.IntegrationTests.OutProcessTests;
+namespace PlayerRecordService.Tests.IntegrationTests.OutProcessTests;
 
 public class PlayerStorageRedisConnectorTest : IClassFixture<RedisContainerFixture>
 {

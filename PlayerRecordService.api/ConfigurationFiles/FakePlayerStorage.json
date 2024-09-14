@@ -7,7 +7,7 @@
   },
   "AllowedHosts": "*",
   "Implementations": {
-    "PlayerStorage": "SkycavePlayerService.Implementations.TestDoubles.FakePlayerStorageInMemory",
-    "PlayerRepository": "SkycavePlayerService.Implementations.Repositories.PlayerRepository"
+    "PlayerStorage": "PlayerRecordService.Implementations.TestDoubles.FakePlayerStorageInMemory",
+    "PlayerRepository": "PlayerRecordService.Implementations.Repositories.PlayerRepository"
   }
 }

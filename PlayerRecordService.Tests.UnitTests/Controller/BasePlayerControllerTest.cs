@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
 using Moq;
-using SkycavePlayerService.api.Controllers;
-using SkycavePlayerService.Shared.Contracts;
-using SkycavePlayerService.Tests.TestUtilities;
+using PlayerRecordService.api.Controllers;
+using PlayerRecordService.Shared.Contracts;
+using PlayerRecordService.Tests.TestUtilities;
 
-namespace SkycavePlayerService.Tests.UnitTests.Controller
+namespace PlayerRecordService.Tests.UnitTests.Controller
 {
     public abstract class BasePlayerControllerTest : BaseUnitTest<PlayersController>
     {

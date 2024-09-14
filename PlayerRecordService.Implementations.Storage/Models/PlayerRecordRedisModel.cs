@@ -1,9 +1,9 @@
-﻿using SkycavePlayerService.Shared.Models.PlayerRecord;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.Json.Serialization;
+using PlayerRecordService.Shared.Models.PlayerRecord;
 
-namespace SkycavePlayerService.Implementations.Storage.Models
+namespace PlayerRecordService.Implementations.Storage.Models
 {
     internal class PlayerRecordRedisModel
     {

@@ -1,6 +1,6 @@
 ﻿using StackExchange.Redis;
 
-namespace SkycavePlayerService.Implementations.Storage
+namespace PlayerRecordService.Implementations.Storage
 {
     internal class RedisDatabaseProvider
     {

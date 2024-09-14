@@ -1,6 +1,6 @@
-﻿using SkycavePlayerService.Shared.Models.PlayerRecord.Primitives;
+﻿using PlayerRecordService.Shared.Models.PlayerRecord.Primitives;
 
-namespace SkycavePlayerService.Shared.Models.PlayerRecord
+namespace PlayerRecordService.Shared.Models.PlayerRecord
 {
     /// <summary>
     ///  The PlayerRecordModel is the aggregate root for the player records.

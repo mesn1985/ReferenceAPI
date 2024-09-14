@@ -7,8 +7,8 @@
   },
   "AllowedHosts": "*",
   "Implementations": {
-    "PlayerStorage": "SkycavePlayerService.Implementations.Storage.PlayerServiceRedisStorage",
-    "PlayerRepository": "SkycavePlayerService.Implementations.Repositories.PlayerRepository"
+    "PlayerStorage": "PlayerRecordService.Implementations.Storage.PlayerServiceRedisStorage",
+    "PlayerRepository": "PlayerRecordService.Implementations.Repositories.PlayerRepository"
   },
   "ConnectionStrings": {
     "Redis": "127.0.0.1:6379"

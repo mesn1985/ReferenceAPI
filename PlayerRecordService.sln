@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33927.249
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.api", "PlayerRecordService.api\SkycavePlayerService.api.csproj", "{173E33F1-AF2E-4C44-B3F9-0D8644834829}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerRecordService.api", "PlayerRecordService.api\PlayerRecordService.api.csproj", "{173E33F1-AF2E-4C44-B3F9-0D8644834829}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Tests.UnitTests", "PlayerRecordService.Tests.UnitTests\SkycavePlayerService.Tests.UnitTests.csproj", "{DA554AD7-1FFB-4263-BF7E-571DA9F48951}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerRecordService.Tests.UnitTests", "PlayerRecordService.Tests.UnitTests\PlayerRecordService.Tests.UnitTests.csproj", "{DA554AD7-1FFB-4263-BF7E-571DA9F48951}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B4862CC9-712A-471B-9A3B-E0027A703315}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,21 +15,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Implementations.TestDoubles", "PlayerRecordService.Implementations.TestDoubles\SkycavePlayerService.Implementations.TestDoubles.csproj", "{8F2832B5-7FC3-4F56-994D-E9D4238D7305}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerRecordService.Implementations.TestDoubles", "PlayerRecordService.Implementations.TestDoubles\PlayerRecordService.Implementations.TestDoubles.csproj", "{8F2832B5-7FC3-4F56-994D-E9D4238D7305}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Shared.Models", "PlayerRecordService.Shared.Models\SkycavePlayerService.Shared.Models.csproj", "{CBB15EB1-6126-44C3-BF0C-F1D28A759A01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerRecordService.Shared.Models", "PlayerRecordService.Shared.Models\PlayerRecordService.Shared.Models.csproj", "{CBB15EB1-6126-44C3-BF0C-F1D28A759A01}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Shared.Contracts", "PlayerRecordService.Shared.Contracts\SkycavePlayerService.Shared.Contracts.csproj", "{8C67C31E-F6EF-46E1-BBBF-631856EFCA5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerRecordService.Shared.Contracts", "PlayerRecordService.Shared.Contracts\PlayerRecordService.Shared.Contracts.csproj", "{8C67C31E-F6EF-46E1-BBBF-631856EFCA5B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Implementations.Repositories", "PlayerRecordService.Implementations.Repositories\SkycavePlayerService.Implementations.Repositories.csproj", "{C6D089C2-7BE8-4430-A776-2F11A04C24DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerRecordService.Implementations.Repositories", "PlayerRecordService.Implementations.Repositories\PlayerRecordService.Implementations.Repositories.csproj", "{C6D089C2-7BE8-4430-A776-2F11A04C24DC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Implementations.Storage", "PlayerRecordService.Implementations.Storage\SkycavePlayerService.Implementations.Storage.csproj", "{671B931E-39E7-4146-ACDF-B708D795C7EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerRecordService.Implementations.Storage", "PlayerRecordService.Implementations.Storage\PlayerRecordService.Implementations.Storage.csproj", "{671B931E-39E7-4146-ACDF-B708D795C7EB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Tests.IntegrationTests", "PlayerRecordService.Tests.IntegrationTests\SkycavePlayerService.Tests.IntegrationTests.csproj", "{470C4F61-EC85-4057-9012-35C1422296D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerRecordService.Tests.IntegrationTests", "PlayerRecordService.Tests.IntegrationTests\PlayerRecordService.Tests.IntegrationTests.csproj", "{470C4F61-EC85-4057-9012-35C1422296D8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Exceptions", "PlayerRecordService.Exceptions\SkycavePlayerService.Exceptions.csproj", "{F921BD34-036C-419E-9EF1-46A4E816EA57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerRecordService.Exceptions", "PlayerRecordService.Exceptions\PlayerRecordService.Exceptions.csproj", "{F921BD34-036C-419E-9EF1-46A4E816EA57}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkycavePlayerService.Tests.TestUtilities", "PlayerRecordService.Tests.TestUtilities\SkycavePlayerService.Tests.TestUtilities.csproj", "{9CDC551D-83DC-477E-9A14-B265E6BC60D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayerRecordService.Tests.TestUtilities", "PlayerRecordService.Tests.TestUtilities\PlayerRecordService.Tests.TestUtilities.csproj", "{9CDC551D-83DC-477E-9A14-B265E6BC60D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

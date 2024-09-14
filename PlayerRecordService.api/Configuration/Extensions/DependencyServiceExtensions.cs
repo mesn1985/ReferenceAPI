@@ -1,7 +1,7 @@
-﻿using SkycavePlayerService.Shared.Contracts;
-using System.Reflection;
+﻿using System.Reflection;
+using PlayerRecordService.Shared.Contracts;
 
-namespace SkycavePlayerService.api.Configuration.Extensions
+namespace PlayerRecordService.api.Configuration.Extensions
 {
     /// <summary>
     ///  provides extension methods for initializing dependency injection implementations based on configuration settings.

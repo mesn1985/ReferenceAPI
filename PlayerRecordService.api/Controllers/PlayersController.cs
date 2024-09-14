@@ -1,15 +1,15 @@
-﻿using Asp.Versioning;
+﻿using System.ComponentModel.DataAnnotations;
+using Asp.Versioning;
 using Microsoft.AspNetCore.Mvc;
-using SkycavePlayerService.api.DTOs;
-using SkycavePlayerService.api.DTOs.Extentions;
-using SkycavePlayerService.api.Infrastructure.Attributes;
-using SkycavePlayerService.Shared.Contracts;
-using System.ComponentModel.DataAnnotations;
-using SkycavePlayerService.Exceptions;
-using SkycavePlayerService.Shared.Models.PlayerRecord;
-using SkycavePlayerService.Shared.Models.PlayerRecord.Primitives;
+using PlayerRecordService.api.DTOs;
+using PlayerRecordService.api.DTOs.Extentions;
+using PlayerRecordService.api.Infrastructure.Attributes;
+using PlayerRecordService.Exceptions;
+using PlayerRecordService.Shared.Contracts;
+using PlayerRecordService.Shared.Models.PlayerRecord;
+using PlayerRecordService.Shared.Models.PlayerRecord.Primitives;
 
-namespace SkycavePlayerService.api.Controllers
+namespace PlayerRecordService.api.Controllers
 {
     /// <summary>
     /// Player service service layer.

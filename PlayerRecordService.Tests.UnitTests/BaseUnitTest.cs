@@ -1,8 +1,6 @@
-﻿using Moq;
-using Microsoft.Extensions.Logging;
-using SkycavePlayerService.Tests.TestUtilities;
+﻿using PlayerRecordService.Tests.TestUtilities;
 
-namespace SkycavePlayerService.Tests.UnitTests
+namespace PlayerRecordService.Tests.UnitTests
 {
     public abstract class BaseUnitTest<T>
     {

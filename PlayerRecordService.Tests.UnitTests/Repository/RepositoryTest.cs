@@ -1,11 +1,11 @@
 ﻿using Moq;
-using SkycavePlayerService.Exceptions;
-using SkycavePlayerService.Implementations.Repositories;
-using SkycavePlayerService.Shared.Contracts;
-using SkycavePlayerService.Shared.Models.PlayerRecord;
-using SkycavePlayerService.Shared.Models.PlayerRecord.Primitives;
+using PlayerRecordService.Exceptions;
+using PlayerRecordService.Implementations.Repositories;
+using PlayerRecordService.Shared.Contracts;
+using PlayerRecordService.Shared.Models.PlayerRecord;
+using PlayerRecordService.Shared.Models.PlayerRecord.Primitives;
 
-namespace SkycavePlayerService.Tests
+namespace PlayerRecordService.Tests.UnitTests.Repository
 {
     public class PlayerRepositoryTests
     {

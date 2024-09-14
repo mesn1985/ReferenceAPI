@@ -1,8 +1,7 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
 
-
-namespace SkycavePlayerService.api.Infrastructure.Attributes
+namespace PlayerRecordService.api.Infrastructure.Attributes
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Parameter, AllowMultiple = false)]
     public class PositionAttribute : ValidationAttribute

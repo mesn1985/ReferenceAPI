@@ -1,7 +1,7 @@
-﻿using SkycavePlayerService.Implementations.Storage.Models;
-using SkycavePlayerService.Shared.Models.PlayerRecord;
+﻿using PlayerRecordService.Implementations.Storage.Models;
+using PlayerRecordService.Shared.Models.PlayerRecord;
 
-namespace SkycavePlayerService.Implementations.Storage.Extentions
+namespace PlayerRecordService.Implementations.Storage.Extentions
 {
     internal static class PlayerRecordModelExtentions
     {

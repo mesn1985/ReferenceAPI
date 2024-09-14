@@ -1,8 +1,8 @@
-﻿using SkycavePlayerService.Implementations.TestDoubles;
-using SkycavePlayerService.Shared.Models.PlayerRecord;
-using SkycavePlayerService.Shared.Models.PlayerRecord.Primitives;
+﻿using PlayerRecordService.Implementations.TestDoubles;
+using PlayerRecordService.Shared.Models.PlayerRecord;
+using PlayerRecordService.Shared.Models.PlayerRecord.Primitives;
 
-namespace SkycavePlayerService.Tests
+namespace PlayerRecordService.Tests.UnitTests.TestDoubles
 {
     public class FakePlayerStorageInMemoryTests
     {

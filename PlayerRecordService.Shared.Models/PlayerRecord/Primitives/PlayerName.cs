@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SkycavePlayerService.Shared.Models.PlayerRecord.Primitives
+﻿namespace PlayerRecordService.Shared.Models.PlayerRecord.Primitives
 {
     public class PlayerName : ValueObjectBase<string>
     {

@@ -1,10 +1,8 @@
-﻿
+﻿using PlayerRecordService.api.DTOs;
+using PlayerRecordService.Tests.TestUtilities;
+using PlayerRecordService.Tests.TestUtilities.Extensions;
 
-using SkycavePlayerService.api.DTOs;
-using SkycavePlayerService.Tests.TestUtilities;
-using SkycavePlayerService.Tests.TestUtilities.Extensions;
-
-namespace SkycavePlayerService.Tests.IntegrationTests.Infrastructure
+namespace PlayerRecordService.Tests.IntegrationTests.Infrastructure
 {
     public abstract class IntegrationTestBase : IClassFixture<PlayerServiceWebApplicationFactory>
     {

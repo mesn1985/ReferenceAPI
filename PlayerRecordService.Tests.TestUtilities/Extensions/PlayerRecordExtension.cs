@@ -1,8 +1,8 @@
 ﻿using System.Text.Json;
-using SkycavePlayerService.api.DTOs;
-using SkycavePlayerService.Shared.Models.PlayerRecord;
+using PlayerRecordService.api.DTOs;
+using PlayerRecordService.Shared.Models.PlayerRecord;
 
-namespace SkycavePlayerService.Tests.TestUtilities.Extensions
+namespace PlayerRecordService.Tests.TestUtilities.Extensions
 {
     public static class PlayerRecordExtension
     {

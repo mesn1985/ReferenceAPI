@@ -1,12 +1,12 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FluentAssertions;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using SkycavePlayerService.Exceptions;
-using FluentAssertions;
-using SkycavePlayerService.Shared.Models.PlayerRecord;
-using SkycavePlayerService.Tests.TestUtilities.Extensions;
+using PlayerRecordService.Exceptions;
+using PlayerRecordService.Shared.Models.PlayerRecord;
+using PlayerRecordService.Tests.TestUtilities.Extensions;
 
-namespace SkycavePlayerService.Tests.UnitTests.Controller
+namespace PlayerRecordService.Tests.UnitTests.Controller
 {
     public class UpdatePlayerRecord : BasePlayerControllerTest
     {

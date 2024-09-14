@@ -11,9 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PlayerRecordService.Exceptions\SkycavePlayerService.Exceptions.csproj" />
-    <ProjectReference Include="..\PlayerRecordService.Shared.Contracts\SkycavePlayerService.Shared.Contracts.csproj" />
-    <ProjectReference Include="..\PlayerRecordService.Shared.Models\SkycavePlayerService.Shared.Models.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Exceptions\PlayerRecordService.Exceptions.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Shared.Contracts\PlayerRecordService.Shared.Contracts.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Shared.Models\PlayerRecordService.Shared.Models.csproj" />
   </ItemGroup>
 
 </Project>

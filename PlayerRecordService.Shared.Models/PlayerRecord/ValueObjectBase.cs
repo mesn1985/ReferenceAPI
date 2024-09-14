@@ -1,7 +1,4 @@
-﻿using System;
-
-
-namespace SkycavePlayerService.Shared.Models.PlayerRecord
+﻿namespace PlayerRecordService.Shared.Models.PlayerRecord
 {
     /// <summary>
     /// The purpose of using the ValueObject base class, is simply

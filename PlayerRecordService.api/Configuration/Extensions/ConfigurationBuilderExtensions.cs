@@ -1,4 +1,4 @@
-﻿namespace SkycavePlayerService.api.Configuration.Extensions
+﻿namespace PlayerRecordService.api.Configuration.Extensions
 {
     /// <summary>
     /// An extention method class container for all Extension methods related to  IConfigurationBuilder

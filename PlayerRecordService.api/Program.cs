@@ -2,10 +2,10 @@ using System.Reflection;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Models;
-using SkycavePlayerService.api.Configuration.Extensions;
-using SkycavePlayerService.api.Infrastructure;
+using PlayerRecordService.api.Configuration.Extensions;
+using PlayerRecordService.api.Infrastructure;
 
-namespace SkycavePlayerService.api
+namespace PlayerRecordService.api
 {
     /// <summary>
     /// The Program class is the composition root of the api service.
@@ -57,9 +57,9 @@ namespace SkycavePlayerService.api
 
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Skycave player service API",
+                    Title = "Player record service API",
                     Version = "v1",
-                    Description = "Skycave player service API <br />Team India<br />Martin Edwin Schjødt Nielsen<br />Jakob Varring<br /> ",
+                    Description = "Player record service API <br />Martin Edwin Schjï¿½dt Nielsen<br /> ",
                     Contact = new OpenApiContact
                     {
                         Name = "Martin Nielsen",

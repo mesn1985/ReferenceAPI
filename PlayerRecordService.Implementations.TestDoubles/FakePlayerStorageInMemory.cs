@@ -1,8 +1,8 @@
-﻿using SkycavePlayerService.Shared.Contracts;
-using SkycavePlayerService.Shared.Models.PlayerRecord;
-using SkycavePlayerService.Shared.Models.PlayerRecord.Primitives;
+﻿using PlayerRecordService.Shared.Contracts;
+using PlayerRecordService.Shared.Models.PlayerRecord;
+using PlayerRecordService.Shared.Models.PlayerRecord.Primitives;
 
-namespace SkycavePlayerService.Implementations.TestDoubles
+namespace PlayerRecordService.Implementations.TestDoubles
 {
     public class FakePlayerStorageInMemory : IPlayerStorage
     {

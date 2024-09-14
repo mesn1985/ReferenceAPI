@@ -1,7 +1,7 @@
-﻿using SkycavePlayerService.api.DTOs;
-using SkycavePlayerService.Shared.Models.PlayerRecord;
+﻿using PlayerRecordService.api.DTOs;
+using PlayerRecordService.Shared.Models.PlayerRecord;
 
-namespace SkycavePlayerService.Tests.TestUtilities
+namespace PlayerRecordService.Tests.TestUtilities
 {
     public class PlayerRecordGenerator
     {

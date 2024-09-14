@@ -1,7 +1,6 @@
-﻿using SkycavePlayerService.Shared.Models.PlayerRecord;
-using SkycavePlayerService.Shared.Models.PlayerRecord.Primitives;
+﻿using PlayerRecordService.Shared.Models.PlayerRecord;
 
-namespace SkycavePlayerService.api.DTOs.Extentions
+namespace PlayerRecordService.api.DTOs.Extentions
 {
     public static class PlayerRecordExtensions
     {

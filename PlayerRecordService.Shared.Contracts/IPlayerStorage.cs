@@ -1,12 +1,7 @@
-﻿using SkycavePlayerService.Shared.Models.PlayerRecord.Primitives;
-using SkycavePlayerService.Shared.Models.PlayerRecord;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using PlayerRecordService.Shared.Models.PlayerRecord;
+using PlayerRecordService.Shared.Models.PlayerRecord.Primitives;
 
-namespace SkycavePlayerService.Shared.Contracts
+namespace PlayerRecordService.Shared.Contracts
 {
     public interface IPlayerStorage : IDisposable
     {

@@ -1,11 +1,10 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.Json.Serialization;
-using SkycavePlayerService.api.Infrastructure.Attributes;
-using SkycavePlayerService.Shared.Models.PlayerRecord;
+using PlayerRecordService.api.Infrastructure.Attributes;
+using PlayerRecordService.Shared.Models.PlayerRecord;
 
-namespace SkycavePlayerService.api.DTOs
+namespace PlayerRecordService.api.DTOs
 {
    /// <summary>
    /// is the dto type, used for representing player record

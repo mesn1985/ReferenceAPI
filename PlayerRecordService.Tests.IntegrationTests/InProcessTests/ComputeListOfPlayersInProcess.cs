@@ -1,8 +1,9 @@
 ﻿using System.Net.Http.Json;
-using SkycavePlayerService.api.DTOs;
-using SkycavePlayerService.Tests.TestUtilities.Extensions;
+using PlayerRecordService.api.DTOs;
+using PlayerRecordService.Tests.IntegrationTests.Infrastructure;
+using PlayerRecordService.Tests.TestUtilities.Extensions;
 
-namespace SkycavePlayerService.Tests.IntegrationTests.InProcessTests
+namespace PlayerRecordService.Tests.IntegrationTests.InProcessTests
 {
     public class ComputeListOfPlayersInProcess : IntegrationTestBase
     {

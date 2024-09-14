@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Testcontainers.Redis;
 
-namespace SkycavePlayerService.Tests.IntegrationTests.OutProcessTests
+namespace PlayerRecordService.Tests.IntegrationTests.OutProcessTests
 {
     public class RedisContainerFixture : IAsyncLifetime
     {

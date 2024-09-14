@@ -27,10 +27,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PlayerRecordService.api\SkycavePlayerService.api.csproj" />
-    <ProjectReference Include="..\PlayerRecordService.Implementations.Storage\SkycavePlayerService.Implementations.Storage.csproj" />
-    <ProjectReference Include="..\PlayerRecordService.Shared.Models\SkycavePlayerService.Shared.Models.csproj" />
-    <ProjectReference Include="..\PlayerRecordService.Tests.TestUtilities\SkycavePlayerService.Tests.TestUtilities.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.api\PlayerRecordService.api.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Implementations.Storage\PlayerRecordService.Implementations.Storage.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Shared.Models\PlayerRecordService.Shared.Models.csproj" />
+    <ProjectReference Include="..\PlayerRecordService.Tests.TestUtilities\PlayerRecordService.Tests.TestUtilities.csproj" />
   </ItemGroup>
 
 </Project>
