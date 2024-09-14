@@ -29,9 +29,9 @@ jobs:
       with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PLAYER_RECORD_TOKEN }}
-    - name: Build and push Pleyer record service image
+    - name: Build and push Player record service image
       uses: docker/build-push-action@v5
       with:
-          context: "{{defaultContext}}:PlayerRecordService.api"
+          # context: "{{defaultContext}}:PlayerRecordService.api"
           push: true
           tags: lightmaze/player_record_service , lightmaze/player_record_service:${{github.run_number}}
