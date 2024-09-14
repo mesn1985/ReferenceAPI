@@ -100,6 +100,17 @@ An example of starting the application with local hosted redis storage `dotnet r
 
 See the configuration file for redis service dns and port.
 
+### Service endpoints
+The endpoint can also be viewed in the swagger API documentation found at `<Base url>:<PORT>/swagger/index.html`  
+  
+| Path                                              | HTTP Verb | Content Body | Explanation                                                                                               | Status Success Code       | Status Error Code                |
+|---------------------------------------------------|-----------|--------------|-----------------------------------------------------------------------------------------------------------|----------------------------|----------------------------------|
+| /api/v1/players/{playerId}                       | GET       | No content   | Gets a player record based on the player id.                                                             | 200 - Player found         | 404 - Player not found           |
+| /api/v1/players                                  | PUT       | JSON (PlayerRecord) | Updates an existing player or adds a new player if no match on the player id.                            | 200 - Player was updated   | 400 - Invalid player attributes  |
+| /api/v1/players/computerlistofplayersat          | GET       | No content   | Retrieves a list of active players at a specific location within the cave.                               | 200 - Active players found | 204 - No active players found    |
+
+
+
 ## Testing
 The code base provides in-process integration tests of the application, unit tests and out-process integration
 tests (Connector test).
