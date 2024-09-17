@@ -54,7 +54,8 @@ namespace PlayerRecordService.api.Controllers
                 return NotFound();
             }
             logger.LogInformation($"Player with id: {playerId} found");
-            return Ok(playerModel.AsDto());
+            // return Ok(playerModel.AsDto());
+            return BadRequest();
         }
         /// <summary>
         /// Updates existing player, or adds new player if the is no match on the player id.
