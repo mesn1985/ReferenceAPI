@@ -8,7 +8,7 @@ using PlayerRecordService.Tests.TestUtilities;
 using PlayerRecordService.Tests.TestUtilities.Extensions;
 
 namespace PlayerRecordService.Tests.IntegrationTests.OutProcessTests;
-
+//Redundant comment
 public class PlayerStorageRedisConnectorTest : IClassFixture<RedisContainerFixture>
 {
     private PlayerRecordGenerator _playerRecordGenerator;
