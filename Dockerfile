@@ -4,10 +4,10 @@
 # Execute with fakeplayerStorage as configuration file: docker run -p 80:80 lightmaze/player_record_service (Uses )
 # Excute  with specific configurataion file: docker run -p 80:80 lightmaze/player_record_service dotnet PlayerRecordService.api.dll Configuration:File=<configuration filename>.json
 
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
 EXPOSE 80

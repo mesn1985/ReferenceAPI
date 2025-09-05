@@ -12,7 +12,7 @@ using PlayerRecordService.Shared.Models.PlayerRecord.Primitives;
 namespace PlayerRecordService.api.Controllers
 {
     /// <summary>
-    /// Player service service layer.
+    /// Player record service, service layer.
     /// @author: Martin Edwin Schjødt Nielsen
     /// </summary>
     [Route("api/v{version:apiVersion}/[controller]")]
@@ -54,8 +54,8 @@ namespace PlayerRecordService.api.Controllers
                 return NotFound();
             }
             logger.LogInformation($"Player with id: {playerId} found");
-            // return Ok(playerModel.AsDto());
-            return BadRequest();
+            return Ok(playerModel.AsDto());
+            
         }
         /// <summary>
         /// Updates existing player, or adds new player if the is no match on the player id.

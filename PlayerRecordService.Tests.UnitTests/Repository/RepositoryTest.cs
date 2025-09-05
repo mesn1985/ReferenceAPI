@@ -1,4 +1,6 @@
-﻿using Moq;
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Threading.Tasks;
+using Moq;
 using PlayerRecordService.Exceptions;
 using PlayerRecordService.Implementations.Repositories;
 using PlayerRecordService.Shared.Contracts;
@@ -19,7 +21,7 @@ namespace PlayerRecordService.Tests.UnitTests.Repository
         }
 
         [Fact]
-        public void GetActivePlayersAt_Can_Get_Active_Player_At_Position_Returns_Initialized_PlayerRecordModelObject()
+        public async Task GetActivePlayersAt_Can_Get_Active_Player_At_Position_Returns_Initialized_PlayerRecordModelObject()
         {
             // Arrange
             var position = new Position("(0,0,0)");
@@ -28,14 +30,14 @@ namespace PlayerRecordService.Tests.UnitTests.Repository
             _storageMock.Setup(s => s.GetPlayersWithNonNullAccessTokenAt(position)).ReturnsAsync(expectedPlayers);
 
             // Act
-            var result = _repository.GetActivePlayersAt(position).Result;
+            var result =  await _repository.GetActivePlayersAt(position);
 
             // Assert
             Assert.Equal(expectedPlayers, result);
         }
         
         [Fact]
-        public void GetPlayerRecordBy_PlayerId_ReturnsPlayerRecord()
+        public async Task GetPlayerRecordBy_PlayerId_ReturnsPlayerRecord()
         {
             // Arrange
             var playerId = new PlayerId("someId");
@@ -45,14 +47,14 @@ namespace PlayerRecordService.Tests.UnitTests.Repository
             _storageMock.Setup(s => s.GetPlayerRecordBy(playerId)).ReturnsAsync(expectedPlayer);
 
             // Act
-            var result = _repository.GetPlayerRecordBy(playerId).Result;
+            var result =  await _repository.GetPlayerRecordBy(playerId);
 
             // Assert
             Assert.Equal(expectedPlayer, result);
         }
 
         [Fact]
-        public void AddPlayer_PlayerDoesNotExist_AddsPlayer()
+        public async Task AddPlayer_PlayerDoesNotExist_AddsPlayer()
         {
             // Arrange
             var player = new PlayerRecordModel("someId", "John", "Group1", Region.AARHUS, "(2,2,2)", "token123");
@@ -60,14 +62,14 @@ namespace PlayerRecordService.Tests.UnitTests.Repository
             _storageMock.Setup(s => s.DoesPlayerExist(player.PlayerId)).ReturnsAsync(false);
 
             // Act
-            _repository.AddPlayer(player);
+            await _repository.AddPlayer(player);
 
             // Assert
             _storageMock.Verify(s => s.AddPlayer(player), Times.Once);
         }
 
         [Fact]
-        public void AddPlayer_PlayerExists_ThrowsPlayerExistException()
+        public async Task AddPlayer_PlayerExists_ThrowsPlayerExistException()
         {
             // Arrange
             var player = new PlayerRecordModel("someId", "John", "Group1", Region.AARHUS, "(3,3,3)", "token123");
@@ -75,11 +77,11 @@ namespace PlayerRecordService.Tests.UnitTests.Repository
             _storageMock.Setup(s => s.DoesPlayerExist(player.PlayerId)).ReturnsAsync(true);
 
             // Act & Assert
-            Assert.ThrowsAsync<PlayerExistException>(() => _repository.AddPlayer(player));
+            await Assert.ThrowsAsync<PlayerExistException>(() => _repository.AddPlayer(player));
         }
 
         [Fact]
-        public void UpdatePlayer_PlayerExists_UpdatesPlayer()
+        public async Task UpdatePlayer_PlayerExists_UpdatesPlayer()
         {
             // Arrange
             var player = new PlayerRecordModel("someId", "John", "Group1", Region.AARHUS, "(4,4,4)", "token123");
@@ -87,14 +89,14 @@ namespace PlayerRecordService.Tests.UnitTests.Repository
             _storageMock.Setup(s => s.DoesPlayerExist(player.PlayerId)).ReturnsAsync(true);
 
             // Act
-            _repository.UpdatePlayer(player);
+            await _repository.UpdatePlayer(player);
 
             // Assert
             _storageMock.Verify(s => s.UpdatePlayer(player), Times.Once);
         }
 
         [Fact]
-        public void UpdatePlayer_PlayerDoesNotExist_ThrowsPlayerDoesNotExistException()
+        public async Task UpdatePlayer_PlayerDoesNotExist_ThrowsPlayerDoesNotExistException()
         {
             // Arrange
             var player = new PlayerRecordModel("someId", "John", "Group1", Region.AARHUS, "(5,5,5)", "token123");
@@ -102,7 +104,7 @@ namespace PlayerRecordService.Tests.UnitTests.Repository
             _storageMock.Setup(s => s.DoesPlayerExist(player.PlayerId)).ReturnsAsync(false);
 
             // Act & Assert
-            Assert.ThrowsAsync<PlayerDoesNotExistException>(() => _repository.UpdatePlayer(player));
+            await Assert.ThrowsAsync<PlayerDoesNotExistException>(() => _repository.UpdatePlayer(player));
         }
     }
 }

@@ -132,6 +132,7 @@ namespace PlayerRecordService.Tests.IntegrationTests.InProcessTests
 
             //Assert
             reponse.StatusCode.Should().Be(HttpStatusCode.BadRequest);
+        
         }
         [Fact]
         public async Task PUT_Can_Update_Existing_Player_Should_Return_Status_Code_200()
